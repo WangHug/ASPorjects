@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+<item xmlns:n1="http://schemas.android.com/apk/res/android" n1:drawable="@drawable/box_blue_border" n1:state_focused="true" />
+<item xmlns:n2="http://schemas.android.com/apk/res/android" n2:drawable="@drawable/box_blue_border" n2:state_pressed="true" />
+<item xmlns:n3="http://schemas.android.com/apk/res/android" n3:drawable="@drawable/box_gray_border" n3:state_enabled="true" />
+</selector>

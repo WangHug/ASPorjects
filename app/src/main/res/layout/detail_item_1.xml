@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginBottom="4.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColor="#ff000000" n1:id="@id/info" n1:visibility="invisible" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="TID:" n1:layout_weight="1.0" />
+    <Button n1:textColor="#ff000000" n1:id="@+id/change_status" n1:background="@drawable/round_border" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:scaleType="center" n1:text="Not Found" n1:textAllCaps="false" />
+</LinearLayout>

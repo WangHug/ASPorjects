@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="16.0dip" n1:paddingTop="8.0dip" n1:paddingRight="16.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColor="#ff000000" n1:id="@id/info" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+    <TextView n1:textColor="@color/theme_light" n1:id="@+id/download_status" n1:background="@drawable/blue_btn_selestor" n1:padding="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="status" />
+</LinearLayout>

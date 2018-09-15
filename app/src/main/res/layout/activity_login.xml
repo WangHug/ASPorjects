@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:id="@+id/my_root"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@color/theme_bg">
+
+    <LinearLayout
+        n1:id="@+id/frame_login"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true"
+        n1:gravity="center_horizontal"
+        n1:orientation="vertical"
+        n1:paddingLeft="28.0dip"
+        n1:paddingRight="28.0dip"
+        n1:visibility="visible">
+
+        <ImageView
+            n1:layout_width="96.0dip"
+            n1:layout_height="96.0dip"
+            n1:scaleType="centerInside"
+            n1:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/title_login"
+            n1:textColor="#ffffffff"
+            n1:textSize="24.0sp" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginBottom="24.0dip"
+            n1:layout_marginTop="24.0dip"
+            n1:text="@string/title_sub_login"
+            n1:textColor="#ffcccccc" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="32.0dip"
+            n1:gravity="center_vertical"
+            n1:paddingRight="28.0dip"
+            n1:visibility="gone">
+
+            <ImageView
+                n1:layout_width="32.0dip"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/icon_compay" />
+
+            <EditText
+                n1:id="@+id/company_id"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/round_rect_white"
+                n1:gravity="center_vertical"
+                n1:hint="@string/hint_company"
+                n1:padding="2.0dip"
+                n1:singleLine="true"
+                n1:text="16881688"
+                n1:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="32.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:gravity="center_vertical"
+            n1:paddingRight="28.0dip">
+
+            <ImageView
+                n1:layout_width="32.0dip"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/icon_user" />
+
+            <EditText
+                n1:id="@+id/login_name"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/round_rect_white"
+                n1:gravity="center_vertical"
+                n1:hint="@string/hint_name"
+                n1:padding="2.0dip"
+                n1:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="32.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:gravity="center_vertical"
+            n1:paddingRight="28.0dip">
+
+            <ImageView
+                n1:layout_width="32.0dip"
+                n1:layout_height="32.0dip"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/icon_lock" />
+
+            <EditText
+                n1:id="@+id/login_pwd"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/round_rect_white"
+                n1:gravity="center_vertical"
+                n1:hint="@string/hint_password"
+                n1:inputType="textPassword"
+                n1:padding="2.0dip"
+                n1:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:id="@+id/location_viw"
+            n1:layout_width="fill_parent"
+            n1:layout_height="32.0dip"
+            n1:layout_marginTop="8.0dip"
+            n1:gravity="center_vertical"
+            n1:clickable="true"
+            n1:paddingRight="28.0dip">
+
+            <ImageView
+                n1:layout_width="32.0dip"
+                n1:layout_height="fill_parent"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/icon_location" />
+
+            <TextView
+                n1:id="@+id/login_location"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/white_fill_expender"
+                n1:clickable="true"
+                n1:gravity="center_vertical"
+                n1:padding="2.0dip"
+                n1:text="Location"
+                n1:textColor="@color/gray" />
+        </LinearLayout>
+        <View
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:gravity="center_vertical">
+
+            <ImageView
+                n1:layout_width="32.0dip"
+                n1:layout_height="32.0dip"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/icon_compay"
+                n1:visibility="invisible" />
+
+            <Button
+                n1:id="@+id/login"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginRight="28.0dip"
+                n1:background="@drawable/blue_btn_selestor"
+
+                n1:text="@string/login"
+                n1:textAllCaps="false"
+                n1:textColor="@drawable/v2_selecter_text_color" />
+        </LinearLayout>
+
+        <View
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0" />
+
+        <TextView
+            n1:id="@+id/version"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:gravity="left"
+            n1:paddingBottom="20.0dip"
+            n1:text="12321"
+            n1:textColor="@color/v2_low_gray" />
+    </LinearLayout>
+
+    <ProgressBar
+        n1:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true"
+        n1:visibility="gone"/>
+
+    <include layout="@layout/option_selecter" />
+</RelativeLayout>

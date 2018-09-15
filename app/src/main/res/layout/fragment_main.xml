@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginBottom="4.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:orientation="horizontal">
+
+        <Button
+            n1:id="@+id/select_category"
+            n1:layout_width="0.0dip"
+            n1:layout_height="28.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/expender"
+            n1:tag="2"
+            n1:textAllCaps="false"
+            n1:textColor="#ff000000" />
+
+        <Button
+            n1:id="@+id/select_location"
+            n1:layout_width="0.0dip"
+            n1:layout_height="28.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/expender"
+            n1:tag="3"
+            n1:textAllCaps="false"
+            n1:textColor="#ff000000" />
+    </LinearLayout>
+
+    <View
+        n1:layout_width="0.0dip"
+        n1:layout_height="0.0dip"
+        n1:focusable="true"
+        n1:focusableInTouchMode="true" />
+
+    <EditText
+        n1:id="@+id/input_filter"
+        n1:layout_width="fill_parent"
+        n1:layout_height="28.0dip"
+        n1:layout_marginBottom="4.0dip"
+        n1:background="@drawable/selecter_border"
+        n1:hint="Filter by inventory code"
+        n1:textColor="#ff000000" />
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:orientation="horizontal"
+        n1:padding="6.0dip">
+
+        <TextView
+            n1:id="@+id/full"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:focusable="true"
+            n1:gravity="center"
+            n1:text="Full List"
+            n1:textColor="@color/theme_btn" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="|"
+            n1:textColor="@color/v2_low_gray" />
+
+        <TextView
+            n1:id="@+id/inlib"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:focusable="true"
+            n1:gravity="center"
+            n1:text="In Library"
+            n1:textColor="@color/v2_low_gray" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="|"
+            n1:textColor="@color/v2_low_gray" />
+
+        <TextView
+            n1:id="@+id/nofound"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:focusable="true"
+            n1:gravity="center"
+            n1:text="Not Found"
+            n1:textColor="@color/v2_low_gray" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="|"
+            n1:textColor="@color/v2_low_gray" />
+
+        <TextView
+            n1:id="@+id/abnormal"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:focusable="true"
+            n1:gravity="center"
+            n1:text="Abnormal"
+            n1:textColor="@color/v2_low_gray" />
+    </LinearLayout>
+
+    <include layout="@layout/main_item_title" />
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="1.0">
+
+        <ListView
+            n1:id="@+id/list"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:background="@color/gray"
+            n1:divider="@color/gray"
+            n1:dividerHeight="1.0dip"
+            n1:paddingBottom="1.0dip"
+            n1:paddingLeft="1.0dip"
+            n1:paddingRight="1.0dip" />
+
+        <LinearLayout
+            n1:id="@+id/waiting_scan"
+            n1:layout_width="128.0dip"
+            n1:layout_height="56.0dip"
+            n1:layout_centerInParent="true"
+            n1:background="#ffaaaaaa"
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:visibility="gone">
+
+            <ProgressBar
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="Scanning" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="#fff9f9f9"
+        n1:orientation="horizontal"
+        n1:padding="6.0dip">
+
+        <Button
+            n1:id="@+id/select_order"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/expender"
+            n1:tag="1"
+            n1:textAllCaps="false"
+            n1:textColor="#ff000000" />
+
+        <Button
+            n1:id="@+id/start"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="8.0dip"
+            n1:layout_marginRight="8.0dip"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/blue_btn_selestor"
+            n1:text="Start"
+            n1:textAllCaps="false" />
+
+        <Button
+            n1:id="@+id/save"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/low_green_btn_selestor"
+            n1:paddingLeft="4.0dip"
+            n1:paddingRight="4.0dip"
+            n1:text="Save"
+            n1:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ffffffff"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:id="@+id/f"
+        n1:layout_width="fill_parent"
+        n1:layout_height="42.0dip"
+        n1:layout_alignParentTop="true"
+        n1:background="@color/theme_bg"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal">
+
+        <ImageButton
+            n1:id="@+id/frame_back"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:background="@null"
+            n1:scaleType="centerInside"
+            n1:src="@drawable/ic_back" />
+
+        <TextView
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Bluetooth"
+            n1:textColor="#ffffffff" />
+
+        <Button
+            n1:id="@+id/frame_clear"
+            n1:layout_width="64.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_margin="4.0dip"
+            n1:background="@drawable/white_round_border"
+            n1:paddingLeft="2.0dip"
+            n1:paddingRight="2.0dip"
+            n1:text="Scan"
+            n1:textAllCaps="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent">
+
+        <ListView
+            n1:id="@+id/list"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:divider="@color/gray"
+            n1:dividerHeight="1.0dip" />
+
+        <LinearLayout
+            n1:id="@+id/frame_connect"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:clickable="true"
+            n1:orientation="vertical"
+            n1:visibility="gone">
+
+            <TextView
+                n1:id="@+id/test_info"
+                n1:layout_width="wrap_content"
+                n1:layout_height="0.0dip"
+                n1:layout_weight="1.0"
+                n1:maxHeight="120.0dip"
+                n1:scrollbars="vertical"
+                n1:textColor="#ff000000" />
+
+            <RadioGroup
+                n1:layout_width="fill_parent"
+                n1:layout_height="32.0dip"
+                n1:orientation="horizontal">
+
+                <RadioButton
+                    n1:id="@+id/barcode"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="fill_parent"
+                    n1:layout_weight="1.0"
+                    n1:checked="true"
+                    n1:gravity="center_vertical"
+                    n1:text="BarCode"
+                    n1:textColor="#ff000000" />
+
+                <RadioButton
+                    n1:id="@+id/rfid"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="fill_parent"
+                    n1:layout_weight="1.0"
+                    n1:gravity="center_vertical"
+                    n1:text="RFID"
+                    n1:textColor="#ff000000" />
+            </RadioGroup>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:orientation="horizontal"
+                n1:padding="6.0dip">
+
+                <Button
+                    n1:id="@+id/dis_connect"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginRight="4.0dip"
+                    n1:layout_weight="1.0"
+                    n1:background="@drawable/red_btn_selestor"
+                    n1:text="DisConnect"
+                    n1:textAllCaps="false" />
+
+                <Button
+                    n1:id="@+id/save"
+                    n1:layout_width="0.0dip"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:layout_weight="1.0"
+                    n1:background="@drawable/blue_btn_selestor"
+                    n1:text="Save"
+                    n1:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

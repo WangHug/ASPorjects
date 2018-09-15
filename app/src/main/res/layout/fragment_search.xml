@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ffffffff"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="42.0dip"
+        n1:layout_alignParentTop="true"
+        n1:background="@color/theme_bg"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal">
+
+        <ImageButton
+            n1:id="@+id/frame_back"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:background="@null"
+            n1:scaleType="centerInside"
+            n1:src="@drawable/ic_back" />
+
+        <TextView
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Search"
+            n1:textColor="#ffffffff" />
+
+        <Button
+            n1:id="@+id/frame_clear"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="4.0dip"
+            n1:background="@drawable/white_round_border"
+            n1:paddingLeft="2.0dip"
+            n1:paddingRight="2.0dip"
+            n1:text="QR Code"
+            n1:textAllCaps="false"
+            n1:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="32.0dip"
+        n1:layout_marginBottom="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:paddingLeft="16.0dip"
+        n1:paddingRight="16.0dip">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="Inventory Code:"
+            n1:textColor="#ff000000" />
+
+        <TextView
+            n1:id="@+id/epc"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:background="@color/gray"
+            n1:paddingLeft="2.0dip"
+            n1:textColor="#ff000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="32.0dip"
+        n1:layout_marginBottom="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:paddingLeft="16.0dip"
+        n1:paddingRight="16.0dip">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="Description:"
+            n1:textColor="#ff000000" />
+
+        <TextView
+            n1:id="@+id/description"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:background="@color/gray"
+            n1:paddingLeft="2.0dip"
+            n1:textColor="#ff000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="32.0dip"
+        n1:layout_marginBottom="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:paddingLeft="16.0dip"
+        n1:paddingRight="16.0dip">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="Location:"
+            n1:textColor="#ff000000" />
+
+        <TextView
+            n1:id="@+id/location"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:background="@color/gray"
+            n1:paddingLeft="2.0dip"
+            n1:textColor="#ff000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="32.0dip"
+        n1:layout_marginBottom="8.0dip"
+        n1:layout_marginTop="8.0dip"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal"
+        n1:paddingLeft="16.0dip"
+        n1:paddingRight="16.0dip">
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="Signal Strength Indicator:"
+            n1:textColor="#ff000000" />
+
+        <TextView
+            n1:id="@+id/hint"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:paddingLeft="2.0dip"
+            n1:textColor="@color/theme_btn" />
+    </LinearLayout>
+
+    <ProgressBar
+        n1:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginTop="8.0dip"
+        n1:clickable="false"
+        n1:max="100"
+        n1:paddingLeft="16.0dip"
+        n1:paddingRight="16.0dip"
+        n1:progress="0"
+        n1:secondaryProgress="100" />
+</LinearLayout>

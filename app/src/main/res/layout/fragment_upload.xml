@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ffffffff"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:id="@+id/f"
+        n1:layout_width="fill_parent"
+        n1:layout_height="42.0dip"
+        n1:layout_alignParentTop="true"
+        n1:background="@color/theme_bg"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal">
+
+        <ImageButton
+            n1:id="@+id/frame_back"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:background="@null"
+            n1:scaleType="centerInside"
+            n1:src="@drawable/ic_back" />
+
+        <TextView
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Upload"
+            n1:textColor="#ffffffff" />
+
+        <Button
+            n1:id="@+id/frame_clear"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="4.0dip"
+            n1:background="@drawable/white_round_border"
+            n1:paddingLeft="2.0dip"
+            n1:paddingRight="2.0dip"
+            n1:text="QR Code"
+            n1:textAllCaps="false"
+            n1:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@+id/wait"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_centerInParent="true"
+        n1:gravity="center_horizontal"
+        n1:orientation="vertical"
+        n1:visibility="gone">
+
+        <ProgressBar
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content" />
+
+        <TextView
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:text="@string/hint_check_new_data"
+            n1:textColor="@color/theme_light" />
+    </LinearLayout>
+
+    <ListView
+        n1:id="@+id/list"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:divider="@color/v2_gray"
+        n1:dividerHeight="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="56.0dip"
+    n1:layout_marginTop="1.0dip"
+    n1:gravity="center_vertical"
+    n1:orientation="vertical"
+    n1:paddingLeft="4.0dip"
+    n1:paddingRight="4.0dip">
+
+    <TextView
+        n1:id="@+id/user"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="1.0dip"
+        n1:gravity="center_vertical"
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/description"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_marginRight="1.0dip"
+        n1:gravity="center"
+        n1:text="Inventory \n Code"
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/date"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:textColor="@color/v2_low_gray" />
+</LinearLayout>

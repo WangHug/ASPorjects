@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="#ffffffff"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:id="@+id/f"
+        n1:layout_width="fill_parent"
+        n1:layout_height="42.0dip"
+        n1:layout_alignParentTop="true"
+        n1:background="@color/theme_bg"
+        n1:gravity="center_vertical"
+        n1:orientation="horizontal">
+
+        <ImageButton
+            n1:id="@+id/frame_back"
+            n1:layout_width="64.0dip"
+            n1:layout_height="wrap_content"
+            n1:background="@null"
+            n1:scaleType="centerInside"
+            n1:src="@drawable/ic_back" />
+
+        <TextView
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:gravity="center"
+            n1:text="Edit Inventory"
+            n1:textColor="#ffffffff" />
+
+        <Button
+            n1:id="@+id/frame_clear"
+            n1:layout_width="64.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_margin="4.0dip"
+            n1:background="@drawable/white_round_border"
+            n1:paddingLeft="2.0dip"
+            n1:paddingRight="2.0dip"
+            n1:text="QR Code"
+            n1:textAllCaps="false" />
+    </LinearLayout>
+
+    <ScrollView
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@+id/f"
+        n1:layout_margin="6.0dip"
+        n1:paddingBottom="64.0dip">
+
+        <LinearLayout
+            n1:id="@+id/detail_content"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="56.0dip"
+        n1:layout_alignParentBottom="true"
+        n1:orientation="horizontal"
+        n1:padding="6.0dip">
+
+        <Button
+            n1:id="@+id/detail_save"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_marginTop="6.0dip"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/blue_btn_selestor"
+            n1:text="Save"
+            n1:textAllCaps="false"
+            n1:textColor="#ffffffff" />
+
+        <Button
+            n1:id="@+id/detail_cancel"
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginTop="6.0dip"
+            n1:layout_weight="1.0"
+            n1:background="@drawable/red_btn_selestor"
+            n1:text="Cancel"
+            n1:textAllCaps="false"
+            n1:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:id="@+id/status_frame"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:background="#99000000"
+        n1:clickable="true"
+        n1:orientation="vertical"
+        n1:padding="6.0dip"
+        n1:visibility="gone">
+
+        <Space
+            n1:layout_width="wrap_content"
+            n1:layout_height="0.0dip"
+            n1:layout_weight="1.0"
+            n1:minHeight="256.0dip" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:background="@drawable/white_round"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical">
+
+            <TextView
+                n1:id="@+id/status_title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:padding="4.0dip"
+                n1:text="Status"
+                n1:textColor="@color/v2_low_gray" />
+
+            <ListView
+                n1:id="@+id/status_option"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:divider="@color/gray"
+                n1:dividerHeight="1.0dip" />
+        </LinearLayout>
+
+        <Button
+            n1:id="@+id/option_cancel"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="6.0dip"
+            n1:background="@drawable/white_btn_selestor"
+            n1:text="Cancel"
+            n1:textAllCaps="false"
+            n1:textColor="@color/theme_btn" />
+    </LinearLayout>
+</RelativeLayout>

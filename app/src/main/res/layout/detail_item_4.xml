@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:id="@+id/file_frame_1" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="8.0dip">
+        <TextView n1:textColor="#ff000000" n1:id="@+id/file1" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Photo1:" n1:layout_weight="1.0" />
+        <ImageButton n1:textColor="#ff000000" n1:id="@+id/remove1" n1:background="@null" n1:padding="0.0dip" n1:layout_width="48.0dip" n1:layout_height="wrap_content" n1:src="@drawable/ic_delete" n1:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@+id/file_frame_2" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="8.0dip">
+        <TextView n1:textColor="#ff000000" n1:id="@+id/file2" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Photo2:" n1:layout_weight="1.0" />
+        <ImageButton n1:textColor="#ff000000" n1:id="@+id/remove2" n1:background="@null" n1:padding="0.0dip" n1:layout_width="48.0dip" n1:layout_height="wrap_content" n1:src="@drawable/ic_delete" n1:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@+id/file_frame_3" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="8.0dip">
+        <TextView n1:textColor="#ff000000" n1:id="@+id/file3" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Photo3:" n1:layout_weight="1.0" />
+        <ImageButton n1:textColor="#ff000000" n1:id="@+id/remove3" n1:background="@null" n1:padding="0.0dip" n1:layout_width="48.0dip" n1:layout_height="wrap_content" n1:src="@drawable/ic_delete" n1:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@+id/file_frame_4" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginBottom="4.0dip">
+        <TextView n1:textColor="#ff000000" n1:id="@+id/file4" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Photo4:" n1:layout_weight="1.0" />
+        <ImageButton n1:textColor="#ff000000" n1:id="@+id/remove4" n1:background="@null" n1:padding="0.0dip" n1:layout_width="48.0dip" n1:layout_height="wrap_content" n1:src="@drawable/ic_delete" n1:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@+id/file_frame_5" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginBottom="8.0dip">
+        <TextView n1:textColor="#ff000000" n1:id="@+id/file5" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Photo5:" n1:layout_weight="1.0" />
+        <ImageButton n1:textColor="#ff000000" n1:id="@+id/remove5" n1:background="@null" n1:padding="0.0dip" n1:layout_width="48.0dip" n1:layout_height="wrap_content" n1:src="@drawable/ic_delete" n1:scaleType="centerInside" />
+    </LinearLayout>
+    <Button n1:textColor="#ff000000" n1:id="@+id/add_photo" n1:background="@drawable/round_border" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="fill_parent" n1:layout_height="44.0dip" n1:scaleType="center" n1:text="Add Photo" n1:textAllCaps="false" />
+</LinearLayout>

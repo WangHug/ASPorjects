@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@color/theme_bg">
+
+    <LinearLayout
+        n1:id="@+id/menu"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:orientation="horizontal"
+        n1:paddingTop="28.0dip">
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginLeft="16.0dip"
+            n1:layout_weight="1.0"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical">
+
+            <LinearLayout
+
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/stock_take"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/icon_stocktake" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_ss"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/upload"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/icon_upload" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_upload"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/history"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/icon_history" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_history"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_marginRight="16.0dip"
+            n1:layout_weight="1.0"
+            n1:orientation="vertical">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/bluetooth"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/bluetooth" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_bluetooth"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/download"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/icon_download" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_download"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:gravity="center_horizontal"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/logout"
+                    n1:layout_width="96.0dip"
+                    n1:layout_height="96.0dip"
+                    n1:background="@drawable/v2_selecter_ring"
+                    n1:padding="20.0dip"
+                    n1:onClick="click"
+                    n1:clickable="true"
+                    n1:scaleType="centerInside"
+                    n1:src="@drawable/icon_logout" />
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:padding="8.0dip"
+                    n1:text="@string/menu_logout"
+                    n1:textColor="@color/theme_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        n1:id="@+id/fragment_container"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:clickable="true"
+        n1:visibility="gone" />
+</RelativeLayout>

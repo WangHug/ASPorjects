@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="56.0dip"
+    n1:background="@color/gray"
+    n1:gravity="center_vertical"
+    n1:orientation="horizontal">
+
+    <TextView
+        n1:id="@+id/idx"
+        n1:layout_width="56.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:background="#ffffffff"
+        n1:drawableLeft="@drawable/ic_search"
+        n1:gravity="center|right"
+        n1:paddingRight="1.0dip"
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/code"
+        n1:layout_width="72.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:textColor="#ff000000"
+        n1:textSize="12.0sp" />
+
+    <TextView
+        n1:id="@+id/name"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:layout_weight="1.0"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:lines="2"
+        n1:textColor="#ff000000"
+        n1:textSize="12.0sp" />
+
+    <TextView
+        n1:id="@+id/location"
+        n1:layout_width="56.0dip"
+        n1:layout_height="fill_parent"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:textColor="#ff000000" />
+
+    <ImageView
+        n1:id="@+id/status"
+        n1:layout_width="48.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginLeft="1.0dip"
+        n1:background="#ffffffff"
+        n1:padding="8.0dip"
+        n1:scaleType="centerInside"
+        n1:src="@drawable/status_ok" />
+</LinearLayout>

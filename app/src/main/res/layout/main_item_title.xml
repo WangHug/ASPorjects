@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="56.0dip"
+    n1:background="@color/gray"
+    n1:gravity="center_vertical"
+    n1:orientation="horizontal"
+    n1:padding="1.0dip">
+
+    <TextView
+        n1:layout_width="56.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:background="#ffffffff"
+        n1:gravity="center_vertical" />
+
+    <TextView
+        n1:id="@+id/title_code"
+        n1:layout_width="72.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:text="Asset No."
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/title_name"
+        n1:layout_width="0.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginRight="1.0dip"
+        n1:layout_weight="1.0"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:lines="2"
+        n1:text="Asset Name"
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/title_location"
+        n1:layout_width="56.0dip"
+        n1:layout_height="fill_parent"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:text="Location"
+        n1:textColor="#ff000000" />
+
+    <TextView
+        n1:id="@+id/title_status"
+        n1:layout_width="48.0dip"
+        n1:layout_height="fill_parent"
+        n1:layout_marginLeft="1.0dip"
+        n1:background="#ffffffff"
+        n1:gravity="center"
+        n1:text="Status"
+        n1:textColor="#ff000000" />
+</LinearLayout>
