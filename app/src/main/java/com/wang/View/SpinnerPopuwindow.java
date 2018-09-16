@@ -14,7 +14,7 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.example.wang.myapplication.R;
+import com.wang.myapplication.R;
 
 import java.util.List;
 

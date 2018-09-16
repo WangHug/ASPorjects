@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.wang.myapplication.R;
+import com.wang.myapplication.R;
 
 public class Main extends Activity{
     @Override

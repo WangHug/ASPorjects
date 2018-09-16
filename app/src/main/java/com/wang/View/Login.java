@@ -2,6 +2,8 @@ package com.wang.View;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -16,9 +18,13 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.wang.myapplication.R;
+import com.wang.Data.UserLoginModel;
+import com.wang.myapplication.R;
+import com.wang.sqldemo.UserLoginDB;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Login extends Activity implements View.OnClickListener {
@@ -36,6 +42,9 @@ public class Login extends Activity implements View.OnClickListener {
     private ArrayAdapter<String> testDataAdapter;
     /** popup窗口 */
     private PopupWindow typeSelectPopup;
+
+    private UserLoginModel userLogin;
+    private UserLoginDB userLoginDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -47,6 +56,10 @@ public class Login extends Activity implements View.OnClickListener {
         loginBtn = (Button) findViewById(R.id.login);
         loginBtn.setOnClickListener(this);
         locationTxt.setOnClickListener(this);
+
+        userLogin = new UserLoginModel();
+        userLoginDB = new UserLoginDB(this);
+        userLoginDB.queryAllLogin();
     }
 
     private void TestData() {
@@ -96,12 +109,19 @@ public class Login extends Activity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.login:
                 if(nameEdit.getText().equals("")){
-                    Toast.makeText(this,"请输入姓名",Toast.LENGTH_LONG );
+                    Toast.makeText(this,"请输入姓名",Toast.LENGTH_LONG ).show();
                 }else if(pwdEdit.getText().equals("")){
-                    Toast.makeText(this,"请输入密码",Toast.LENGTH_LONG );
+                    Toast.makeText(this,"请输入密码",Toast.LENGTH_LONG ).show();
                 }else if(locationTxt.getText().equals("")){
-                    Toast.makeText(this,"请输入地址",Toast.LENGTH_LONG );
+                    Toast.makeText(this,"请输入地址",Toast.LENGTH_LONG ).show();
                 }else{
+                    SimpleDateFormat formatter = new SimpleDateFormat("yy-MM-dd HH:mm:ss");
+                    Date curDate = new Date(System.currentTimeMillis());//获取当前时间
+                    String loginDate = formatter.format(curDate);
+                    userLogin.setUserName(nameEdit.getText().toString());
+                    userLogin.setLogintype(UserLoginModel.LOGINTYPE.LOGIN);
+                    userLogin.setLoginTime(loginDate);
+                    userLoginDB.SaveLoginStatus(userLogin);
                     Intent intent = new Intent(Login.this, Main.class);
                     startActivity(intent);
                     this.finish();

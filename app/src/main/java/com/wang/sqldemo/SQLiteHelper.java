@@ -13,6 +13,7 @@ import java.util.List;
  * 数据库创建、更新
  */
 public class SQLiteHelper extends SQLiteOpenHelper {
+    private String dbName;
     /**
      * @param context
      *            上下文
@@ -26,13 +27,14 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public SQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory,
                         int version) {
         super(context, name, factory, version);
+        this.dbName = name;
     }
  
     // 创建数据库
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.e("SqliteHelper", "数据库创建");
-        String sql = "create table person(_id integer Primary Key autoincrement,name varchar(20), age integer,sex varchar(20))";
+        String sql = "create table "+ this.dbName +"(_id integer Primary Key autoincrement,user_name varchar(20), login_time varchar(20),login_type varchar(20))";
         db.execSQL(sql);
     }
  
@@ -41,7 +43,11 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         Log.e("SqliteHelper", "数据库更新");
     }
- 
+
+    public SQLiteDatabase SQLiteIntance(){
+        SQLiteDatabase db = getWritableDatabase();
+        return db;
+    }
     /**
      * 添加Person到数据库
      *

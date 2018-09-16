@@ -9,7 +9,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.wang.myapplication.R;
+import com.wang.myapplication.R;
 import com.wang.Data.HttpJson;
 import com.wang.Data.OnHttpPostListener;
 

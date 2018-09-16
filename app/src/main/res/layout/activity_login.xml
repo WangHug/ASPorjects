@@ -68,6 +68,8 @@
             n1:layout_height="32.0dip"
             n1:layout_marginTop="8.0dip"
             n1:gravity="center_vertical"
+            n1:focusableInTouchMode="false"
+            n1:focusable="true"
             n1:paddingRight="28.0dip">
 
             <ImageView
@@ -92,6 +94,8 @@
             n1:layout_height="32.0dip"
             n1:layout_marginTop="8.0dip"
             n1:gravity="center_vertical"
+            n1:focusableInTouchMode="false"
+            n1:focusable="true"
             n1:paddingRight="28.0dip">
 
             <ImageView
@@ -119,6 +123,7 @@
             n1:layout_marginTop="8.0dip"
             n1:gravity="center_vertical"
             n1:clickable="true"
+            n1:focusableInTouchMode="false"
             n1:paddingRight="28.0dip">
 
             <ImageView
@@ -135,7 +140,7 @@
                 n1:clickable="true"
                 n1:gravity="center_vertical"
                 n1:padding="2.0dip"
-                n1:text="Location"
+                n1:hint="Location"
                 n1:textColor="@color/gray" />
         </LinearLayout>
         <View

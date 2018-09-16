@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.wang.myapplication.R;
+import com.wang.myapplication.R;
 
 
 public class StudentDetail extends Activity implements View.OnClickListener {

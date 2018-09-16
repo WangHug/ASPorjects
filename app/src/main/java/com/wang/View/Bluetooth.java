@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.wang.myapplication.R;
+import com.wang.myapplication.R;
 
 public class Bluetooth extends Activity {
 
