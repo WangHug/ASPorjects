@@ -8,7 +8,7 @@
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
     android:paddingTop="40dp"
-    tools:context="com.example.wang.myapplication.StudentDetail">
+    tools:context="com.example.wang.myapplication.com.wang.myapplication.StudentDetail">
 
     <TextView
         android:layout_width="wrap_content"

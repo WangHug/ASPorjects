@@ -1,4 +1,4 @@
-package com.example.wang.myapplication;
+package com.wang.myapplication;
 
 import android.app.Activity;
 import android.content.ContentValues;

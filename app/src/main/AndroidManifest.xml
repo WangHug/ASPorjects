@@ -2,21 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wang.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.wang.View.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StudentDetail" />
+        <activity android:name="com.wang.myapplication.StudentDetail" />
 
         <!-- 插入对话框 -->
         <!-- <activity -->
@@ -36,12 +37,12 @@
         <!-- android:theme="@android:style/Theme.Dialog" /> -->
         <!-- <activity android:name="com.wang.sqlitedemo.MainActivity"> -->
         <!-- </activity> -->
-        <activity android:name=".Main" />
-        <activity android:name=".Download" />
-        <activity android:name=".LoginHistory" />
-        <activity android:name=".Bluetooth" />
-        <activity android:name=".Upload" />
-        <activity android:name=".Products"></activity>
+        <activity android:name="com.wang.View.Main" />
+        <activity android:name="com.wang.View.Download" />
+        <activity android:name="com.wang.View.LoginHistory" />
+        <activity android:name="com.wang.View.Bluetooth" />
+        <activity android:name="com.wang.View.Upload" />
+        <activity android:name="com.wang.View.Products"></activity>
     </application>
 
 </manifest>

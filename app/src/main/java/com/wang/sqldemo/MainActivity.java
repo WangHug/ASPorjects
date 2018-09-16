@@ -1,4 +1,4 @@
-package com.example.wang.sqldemo;
+package com.wang.sqldemo;
  
 import android.app.Activity;
 import android.content.Intent;

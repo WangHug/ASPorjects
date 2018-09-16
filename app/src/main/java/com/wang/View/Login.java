@@ -1,4 +1,4 @@
-package com.example.wang.myapplication;
+package com.wang.View;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,6 +15,8 @@ import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.wang.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;

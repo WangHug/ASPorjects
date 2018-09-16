@@ -1,4 +1,4 @@
-package com.example.wang.myapplication;
+package com.wang.myapplication;
 
 public class Student {
     //表名

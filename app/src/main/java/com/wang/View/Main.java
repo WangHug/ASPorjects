@@ -1,11 +1,11 @@
-package com.example.wang.myapplication;
+package com.wang.View;
 
 import android.app.Activity;
-import android.bluetooth.BluetoothA2dp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import com.example.wang.myapplication.R;
 
 public class Main extends Activity{
     @Override

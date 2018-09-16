@@ -1,9 +1,12 @@
-package com.example.wang.myapplication;
+package com.wang.View;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Bluetooth extends AppCompatActivity {
+import com.example.wang.myapplication.R;
+
+public class Bluetooth extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

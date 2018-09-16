@@ -1,4 +1,4 @@
-package com.example.wang.myapplication;
+package com.wang.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.wang.myapplication.R;
 
 
 public class StudentDetail extends Activity implements View.OnClickListener {

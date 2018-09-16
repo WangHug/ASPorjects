@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Upload">
-
+    tools:context="com.wang.View.Upload">
+    <include layout="@layout/topbar"></include>
 </android.support.constraint.ConstraintLayout>

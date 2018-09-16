@@ -1,4 +1,4 @@
-package com.example.wang.sqldemo;
+package com.wang.sqldemo;
  
 import java.io.Serializable;
  
